@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bean Boutique</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- css  -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- fontsAwesome   -->
+ <!-- Add inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+<body>
+
+<!-- Start header  -->
+ <header>
+     <div class="top-bar">
+    <div class="container">
+        <span>Sign up and GET 20% OFF for your first order.
+        <a href="#signup">Sign Up Now</a>
+        </span>
+    </div>
+ </div>
+
+ <!-- navbar section  -->
+  <nav class="navbar" id="mainHeader">
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" width="75px" class="rounded-pill">
+        <span class="brand-name">Bean Boutique</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+             <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Top Seller</a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                  <li><a class="dropdown-item" href="#topSeller">Coffee Beans</a></li>
+                  <li><a class="dropdown-item" href="#bestSeller">Brewing Tools</a></li>
+              </ul>
+            </li> 
+            <li><a href="#aboutUs">About Us</a></li>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                  <li><a class="dropdown-item" href="beanProduct.html">Coffee Beans</a></li>
+                  <li><a class="dropdown-item" href="brewingProduct.html">Brewing Tools</a></li>
+                  <li><a class="dropdown-item" href="machine.html">Machines</a></li>
+              </ul>
+            </li>
+            <li><a href="">Event & Workshop</a></li>
+            <li><a href="#testimonial">Reviews</a></li>
+        </ul>
+
+        <div class="icons">
+             <a>
+                <img src="img/cart.png" id="cartIcon">
+                 <!-- cart dropdown  -->
+                  <div class="cart-dropdown" id="cartDropdown">
+                    <div class="cart-item">
+                        <span>Heloo x2</span>
+                        <span>$3.50</span>
+                    </div>
+                     <div class="cart-item">
+                        <span>Heloo x3 </span>
+                        <span>$5.50</span>
+                    </div>
+                    <div class="cart-total">
+                        Total : $10.50
+                    </div>
+                  </div>
+             </a>
+
+
+             <a href="#"id="watchIconLink">
+                <img src="img/heart.png" id="watchIcon">
+                <div class="watch-dropdown" id="watchDropdown">
+                    <div class="watch-item">Wishlist is empty</div>
+                </div>
+             </a>
+
+             <a>
+                <img src="img/loupe.png" id="searchIcon">
+                <div class="search-bar" id="searchBar">
+                    <input type="text" placeholder="Search ...">
+                </div>
+            </a>
+
+           
+        </div>
+    </div>
+  </nav>
+</header>
+<!-- End of header  -->
+
+<!-- //Products Section /////////////////////////////////////-->
+<section class="top-seller" id="topSeller">
+  <h2 data-aos="zoom-in">Coffee <span>  Beans</span></h2>
+  <div class="product-grid" data-aos="fade-left">
+    <!-- /////////////////////////////////////////////////////// -->
+    <!-- cart 1 -->
+     <div class="product-card" data-time="25d 10h 20m 30s">
+      <div class="badge">50% OFF</div>
+      <div class="img-wrapper">
+        <img src="img/topsell1.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="123"></i>
+            <i class="fa fa-eye"
+            data-product-name="ORGANIC Coffee"
+            data-product-price="45.00"
+            data-product-image="img/topsell1.png"
+            data-product-category="Arabica Bean"
+            data-product-texture="Rich and Smooth"
+            data-product-description="Freshly roasted organic coffee beans with a rich and smooth flavor.">   
+            </i>
+        </div>
+        
+
+        <div class="timer" id="timer1">
+          <div class="timer-item">
+            <span class="time-value">25</span>
+            <span class="time-label">Days</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">10</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">20</span>
+            <span class="time-label">Mins</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">30</span>
+            <span class="time-label">Sec</span>
+          </div>
+        </div>
+      </div>
+       <p class="category">Arabica Bean</p>
+        <p class="name">ORGANIC Coffee</p>
+        <p class="price">$45.00 <span>$66.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.9
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+    
+
+    <!-- Cart 2 -->
+   <div class="product-card"data-time="30d 10h 20m 30s">
+      <div class="badge">20% OFF</div>
+      <div class="img-wrapper">
+        <img src="img/coffee_new.png">
+        <div class="iconsProduct">
+         <i class="fa fa-heart" data-product-id="124"></i>
+            <i class="fa fa-eye"
+            data-product-name="FRESH ROASTED Coffee"
+            data-product-price="47.00"
+            data-product-image="img/coffee_new.png"
+            data-product-category="ROBUSTA Bean"
+            data-product-texture="Earthy and has a bitter flavour"
+            data-product-description="Freshly roasted ROBUSTA coffee beans with an earthy and bitter flavor.">   
+            </i>
+        </div>
+        <div class="timer" id="timer1">
+          <div class="timer-item">
+            <span class="time-value">30</span>
+            <span class="time-label">Days</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">10</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">20</span>
+            <span class="time-label">Mins</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">30</span>
+            <span class="time-label">Sec</span>
+          </div>
+        </div>
+        <p class="category">Robusta Bean</p>
+        <p class="name">FRESH ROASTED Coffee</p>
+        <p class="price">$47.00 <span>$55.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.7
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+      </div>
+    </div>
+
+    <!-- Cart 3  -->
+      <div class="product-card" data-time="48d 10h 20m 30s">
+      <div class="badge">50% OFF</div>
+      <div class="img-wrapper">
+        <img src="img/topsell3.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="125"></i>
+            <i class="fa fa-eye"
+            data-product-name="BRANCO Coffee"
+            data-product-price="48.00"
+            data-product-image="img/topsell3.png"
+            data-product-category="Excelsa Bean"
+            data-product-texture="Tart and fruity body"
+            data-product-description="Freshly roasted EXCELSA coffee beans with a tart and fruity flavor.">   
+            </i>
+        </div>
+
+        <div class="timer" id="timer1">
+          <div class="timer-item">
+            <span class="time-value">48</span>
+            <span class="time-label">Days</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">10</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">20</span>
+            <span class="time-label">Mins</span>
+          </div>
+          <div class="timer-item">
+            <span class="time-value">30</span>
+            <span class="time-label">Sec</span>
+          </div>
+        </div>
+      </div>
+      <p class="category">Excelsa Bean</p>
+        <p class="name">BRANCO Coffee</p>
+        <p class="price">$48.00 <span>$70.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.8
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+
+    <!-- Cart 4 -->
+      <div class="product-card"">
+      
+      <div class="img-wrapper">
+        <img src="img/topsell4.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="126"></i>
+            <i class="fa fa-eye"
+            data-product-name="WESTWOOD ORGANIC Coffee"
+            data-product-price="66.00"
+            data-product-image="img/topsell4.png"
+            data-product-category="Arabica Bean"
+            data-product-texture="Creamy, watery and gritty"
+            data-product-description="Freshly roasted ORGANIC coffee beans with a creamy, watery and gritty flavor.">   
+            </i>
+        </div>
+      </div>
+      <p class="category">Arabica Bean</p>
+        <p class="name">WESTWOOD ORGANIC Coffee</p>
+        <p class="price">$66.00 </p>
+        <div class="rating">
+          <i class="fa fa-star"></i>5.0
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+    <!-- Cart 5 -->
+  <div class="product-card"">
+      
+      <div class="img-wrapper">
+        <img src="img/topsell5.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="127"></i>
+            <i class="fa fa-eye"
+            data-product-name="COLOMBIA ROAST CRAFT Coffee"
+            data-product-price="48.00"
+            data-product-image="img/topsell5.png"
+            data-product-category="Excelsa Bean"
+            data-product-texture="Silky, smooth, or velvety"
+            data-product-description="Freshly roasted EXCELSA coffee beans with a tart and fruity flavor.">   
+            </i>
+        </div>
+      </div>
+      <p class="category">Excelsa Bean</p>
+        <p class="name">COLOMBIA ROAST CRAFT Coffee</p>
+        <p class="price">$48.00 <span>$70.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.8
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+    <!-- Cart 6 -->
+  <div class="product-card"">
+      
+      <div class="img-wrapper">
+        <img src="img/topseller6.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="125"></i>
+            <i class="fa fa-eye"
+            data-product-name="WESTWOOD ORGANIC Coffee"
+            data-product-price="48.00"
+            data-product-image="img/topsell4.png"
+            data-product-category="Arabica Bean"
+            data-product-texture="Creamy, watery and gritty"
+            data-product-description="Freshly roasted ORGANIC coffee beans with a creamy, watery and gritty flavor.">   
+            </i>
+        </div>
+      </div>
+      <p class="category">Arabica Bean</p>
+        <p class="name">WESTWOOD ORGANIC Coffee</p>
+        <p class="price">$48.00 <span>$70.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.8
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+    <!-- Cart 7 -->
+  <div class="product-card"">
+      
+      <div class="img-wrapper">
+        <img src="img/topseller7.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="125"></i>
+            <i class="fa fa-eye"
+            data-product-name="WESTWOOD ORGANIC Coffee"
+            data-product-price="48.00"
+            data-product-image="img/topsell4.png"
+            data-product-category="Arabica Bean"
+            data-product-texture="Creamy, watery and gritty"
+            data-product-description="Freshly roasted ORGANIC coffee beans with a creamy, watery and gritty flavor.">   
+            </i>
+        </div>
+      </div>
+      <p class="category">Arabica Bean</p>
+        <p class="name">WESTWOOD ORGANIC Coffee</p>
+        <p class="price">$48.00 <span>$70.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.8
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+    <!-- Cart 8 -->
+  <div class="product-card"">
+      
+      <div class="img-wrapper">
+        <img src="img/topseller8.png">
+        <div class="iconsProduct">
+          <i class="fa fa-heart" data-product-id="125"></i>
+            <i class="fa fa-eye"
+            data-product-name="WESTWOOD ORGANIC Coffee"
+            data-product-price="48.00"
+            data-product-image="img/topsell4.png"
+            data-product-category="Arabica Bean"
+            data-product-texture="Creamy, watery and gritty"
+            data-product-description="Freshly roasted ORGANIC coffee beans with a creamy, watery and gritty flavor.">   
+            </i>
+        </div>
+      </div>
+      <p class="category">Arabica Bean</p>
+        <p class="name">WESTWOOD ORGANIC Coffee</p>
+        <p class="price">$48.00 <span>$70.00</span></p>
+        <div class="rating">
+          <i class="fa fa-star"></i>4.8
+        </div>
+        <br/>
+        <a href="" class="btn-primary">Shop Now</a>
+        <br><br>
+    </div>
+
+  </div>
+  <br/><br/>
+
+
+
+ 
+
+  <!-- Modal for product details -->
+      <div class="modal fade" id="productDetailModal" tabindex="-1"   aria-labelledby="productDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                     <div class="modal-header">
+                         <h5 class="modal-title" id="productDetailModalLabel">Product Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body" id="productDetailContent">
+               </div>
+            </div>
+          </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer  -->
+<button id="backToTop">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="logo-column">
+      <h2><img src="img/logo.png" alt="Logo"> Bean Boutique</h2>
+      <p>34 Main Street, Yangon<br>info@beanboutique.com<br>+95 123 456 789</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Newsletter</h4>
+      <ul>
+        <li><a href="#" data-bs-toggle="modal" data-bs-target="#newsletterModal">Subscribe</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 Bean Boutique. All rights reserved.</span>
+    <div class="language-currency">
+      <span>English</span>
+      <span>MMK</span>
+    </div>
+  </div>
+</footer>
+</main>
+<!-- ...existing code... -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/custom.js"></script> 
+<script src="js/extra.js"></script>
+</body>
+</html>
